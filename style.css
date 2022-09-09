@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+@font-face {
+    font-family: gameofthrones;
+    src: url('fonts/Game\ Of\ Thrones/Game of Thrones.ttf');
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+.gotContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content:stretch;
+}
+
+.mainPictureContainer {
+    width: 75%;
+    height: 100vh;
+    background-image:url(assets/site/mapblue.jpg);
+    background-position: 40% 20%;
+    display: inline-grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: auto;
+    grid-row-gap: auto;
+    grid-auto-flow: column;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+.sidePictureDetails {
+    height: 100vh;
+    width: 25%;
+    background-color: black;
+    color: white;
+    padding-left: 5px;
+}
+
+.sideHeader {
+    font-family: gameofthrones;
+    font-size: 30px;
+}
+
+.namePlusHouse {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 20px;
+}
+
+.pitureDescription {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 20px;
+}
+
+.sidePicture {
+    width: 100%;
+}
+
+.searchBar {
+    position: absolute;
+  bottom: 10px;
+}
