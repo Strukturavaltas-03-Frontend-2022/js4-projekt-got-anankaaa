@@ -40,6 +40,35 @@ const showDetails = (character) => {
 
 }
 
+const searchButton = document.querySelector(".searchButton");
+const searchBar = document.querySelector(".searchBar")
+
+
+
+const search = () => {
+    const searchText = searchBar.value.toLowerCase().trim();
+    let foundCharacter = false;
+    for(let i = 0; i < sortedCharacters.length; i += 1){
+        if(sortedCharacters[i].name.toLowerCase() === searchText) {
+            showDetails(sortedCharacters[i]);
+            foundCharacter = true;
+            break;
+        } 
+    } 
+    if(!foundCharacter) {
+        alert("Character not found");
+    }
+    searchBar.value = "";
+}
+
+searchButton.addEventListener('click', search)
+searchBar.addEventListener('keydown', (event) => {
+    if (event.isComposing || event.keyCode === 13) {
+        search();
+    }
+})
+
+
 const init = () => {
     let mainPictureContainer = document.querySelector(".mainPictureContainer");
     sortedCharacters.forEach((character, idx) => {
