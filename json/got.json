@@ -99,6 +99,7 @@
   },
   {
     "name": "Joffrey Baratheon",
+    "dead": true,
     "portrait": "assets/joffrey.png",
     "picture": "assets/pictures/joffrey_baratheon.jpg",
     "bio":"Joffrey Baratheon is the eldest son and heir of King Robert Baratheon and Queen Cersei Lannister. He strong-willed as a child and has an uncontrollable temper not unlike his mother's and an unchecked sadistic streak",
